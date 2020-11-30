@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>Title</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+          integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link type="text/css" href="../css/style.css" rel="stylesheet">
+    <script
+            src="https://code.jquery.com/jquery-3.5.1.js"
+            integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc="
+            crossorigin="anonymous"></script>
+    <script src="../js/moment-with-locales.js"></script>
+    <script src="../js/validate.js"></script>
+    <script src="../js/script.js"></script>
+</head>
+
+<body>
+<form id="mainForm" name="mainForm">
+    <div class="card container-main container shadow">
+        <p class="text-uppercase text-center font-weight-bold">Lorem ipsum dolor sit amet</p>
+        <div class="form-group form-row">
+            <div class="col">
+                <input type="text" class="form-control form-control-sm" id="firstName" name="firstName" placeholder="Имя">
+            </div>
+            <div class="col">
+                <input type="text" class="form-control form-control-sm" id="secondName" name="secondName" value="" placeholder="Фамилия">
+            </div>
+        </div>
+        <div class="form-group form-row">
+            <div class="col">
+                <input type="text" class="form-control form-control-sm" id="bdDay" name="bdDay" value="" placeholder="ДД">
+            </div>
+            <div class="col">
+                <input type="text" class="form-control form-control-sm" id="bdMonth" name="bdMonth" value="" placeholder="ММ">
+            </div>
+            <div class="col">
+                <input type="text" class="form-control form-control-sm" id="bdYear" name="bdYear" value="" placeholder="ГГГГ">
+            </div>
+        </div>
+
+        <div class="form-group">
+
+            <select class="form-control form-control-sm" name="city-select" id="citySelect" name="citySelect">
+                <option value="placeholder">Выберите город</option>
+                <option value="moscow">Москва</option>
+                <option value="kazan">Казань</option>
+                <option value="chelyabinsk">Челябинск</option>
+                <option value="vladivostok">Владивосток</option>
+            </select>
+        </div>
+        <div class="form-group">
+            <button class="btn btn-primary btn-sm btn-block" id="submitButton" type="submit">Отправить</button>
+        </div>
+
+        <div id="alertDiv" class="alert alert-danger" role="alert">
+            <p class="alert-message" id="alert-message">Введите валидные данные</p>
+        </div>
+    </div>
+</form>
+</body>
+</html>

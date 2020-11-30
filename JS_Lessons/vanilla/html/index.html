@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>Title</title>
+    <link type="text/css" href="../css/bootstrap.css" rel="stylesheet">
+    <link type="text/css" href="../css/style.css" rel="stylesheet">
+    <script type="text/javascript" src="../js/script.js"></script>
+</head>
+
+<body>
+<form>
+    <div class="card container-main container shadow">
+        <p class="text-uppercase text-center font-weight-bold">Lorem ipsum dolor sit amet</p>
+        <div class="form-group form-row">
+            <div class="col">
+                <input type="text" class="form-control form-control-sm" id="firstName" placeholder="Имя" required
+                       min="1"
+                       max="10">
+            </div>
+            <div class="col">
+                <input type="text" class="form-control form-control-sm" id="secondName" value="" placeholder="Фамилия"
+                       required min="1" max="15">
+            </div>
+        </div>
+        <div class="form-group form-row">
+            <div class="col">
+                <input type="text" class="form-control form-control-sm" id="bdDay" value="" placeholder="ДД" required>
+            </div>
+            <div class="col">
+                <input type="text" class="form-control form-control-sm" id="bdMonth" value="" placeholder="ММ"
+                       required>
+            </div>
+            <div class="col">
+                <input type="text" class="form-control form-control-sm" id="bdYear" value="" placeholder="ГГГГ"
+                       required>
+            </div>
+        </div>
+        <div class="form-group">
+
+            <select class="form-control form-control-sm" name="city-select" id="citySelect">
+                <option value="placeholder">Выберите город</option>
+                <option value="moscow">Москва</option>
+                <option value="kazan">Казань</option>
+                <option value="chelyabinsk">Челябинск</option>
+                <option value="vladivostok">Владивосток</option>
+            </select>
+        </div>
+        <div class="form-group">
+            <button class="btn btn-primary btn-sm btn-block" id="submitButton" type="submit">Отправить</button>
+        </div>
+
+        <div id="alertDiv" class="alert alert-danger" role="alert">
+            <p class="alert-message" id="alert-message">Введите валидные данные</p>
+        </div>
+    </div>
+</form>
+</body>
+</html>

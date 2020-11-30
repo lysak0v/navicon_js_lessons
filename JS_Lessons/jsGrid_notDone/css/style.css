@@ -1,0 +1,56 @@
+/* Стиль для html и body */
+html, body {
+    height: 100%;
+}
+
+/* Стиль для body */
+body {
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-align: center;
+    align-items: center;
+    padding-top: 40px;
+    padding-bottom: 40px;
+    background-color: #f5f5f5;
+}
+
+/* Стиль для основного блока-контейнера и формы ввода данных */
+.container-main, form {
+    padding: 10px;
+    width: 20rem;
+    margin: auto;
+    display: flex !important;
+}
+
+/* Стиль сообщения об ошибке */
+.alert-message {
+    text-align: center;
+    margin: 0px;
+}
+
+/* Стиль для блока ошибки */
+#alertDiv {
+    display: none;
+    padding: 0.25rem;
+}
+
+/* Стиль для валидного контрола */
+.valid {
+    border-color: #ced4da;
+}
+
+/* Стиль для не валидного контрола */
+.invalid {
+    border-color: red;
+}
+
+/* Стиль для выключеной кнопки, применяется при наличии не валидных контролов на форме */
+button:disabled {
+    background-color: red !important;
+    border-color: red !important;
+}
+
+/* Стиль контейнера jqGrid */
+.jqGridContainer{
+padding-right: 10rem;
+}

@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>Форма оплаты</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"
+          integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    <link type="text/css" href="../css/index.css" rel="stylesheet">
+</head>
+
+<body>
+<form id="mainForm" name="mainForm">
+    <div class="main-container shadow">
+        <div class="form-group">
+            <select id="payerType" name="payerType" class="form-control control">
+                <option value="placeholder">Выберите тип плательщика</option>
+                <option value="privatePerson">Физическое лицо</option>
+                <option value="legalEntity">Юридическое лицо</option>
+            </select>
+        </div>
+        <div class="form-group">
+            <input type="text" id="vatInput" name="vatInput" placeholder="НДС" class="form-control control"
+                   disabled="disabled">
+        </div>
+        <div class="form-group">
+            <input type="text" id="payerName" name="payerName" placeholder="Имя плательщика"
+                   class="form-control control">
+        </div>
+        <div class="form-group">
+            <select id="legalEntityType" name="legalEntityType" class="form-control control">
+                <option value="placeholder">Выберите форму юр.лица</option>
+                <option value="ooo">ООО</option>
+                <option value="oao">ОАО</option>
+                <option value="zao">ЗАО</option>
+                <option value="ip">ИП</option>
+            </select>
+        </div>
+        <div class="form-group">
+            <input type="text" id="inn" name="inn" placeholder="ИНН" class="form-control control">
+        </div>
+        <div class="form-group form-control control" id="simplifiedFormOfTaxationContainer"
+             name="simplifiedFormOfTaxationContainer">
+            <div class="custom-control custom-checkbox">
+                <input type="checkbox" id="simplifiedFormOfTaxation" name="simplifiedFormOfTaxation"
+                       class="custom-control-input">
+                <label class="custom-control-label" for="simplifiedFormOfTaxation">Упрощенное налогооблажение</label>
+            </div>
+        </div>
+        <div class="form-group">
+            <input type="text" id="phone" name="phone" placeholder="+7(900)123-45-67" class="form-control control">
+        </div>
+        <div class="form-group">
+            <input type="text" id="amountOfPayment" name="amountOfPayment" placeholder="Сумма платежа"
+                   class="form-control">
+        </div>
+        <div class="form-group">
+            <input type="text" id="summary" name="summary" placeholder="Итог" class="form-control"
+                   disabled="disabled">
+        </div>
+    </div>
+</form>
+
+<script src="../js/jquery-3.5.1.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"
+        integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
+        crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"
+        integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
+        crossorigin="anonymous"></script>
+<script src="../js/imask.js"></script>
+<script src="../js/validate.js"></script>
+<script type="text/javascript" src="../js/index.js"></script>
+
+</body>
+</html>
